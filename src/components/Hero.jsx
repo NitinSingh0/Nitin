@@ -4,7 +4,7 @@ import { styles } from "../styles";
 
 import { ComputersCanvas } from "./canvas";
 import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber"; // if using R3F
+
 import Loader from "../components/Loader";
 const Hero = () => {
   return (
@@ -28,9 +28,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <Suspense fallback={<Loader />}>
+    
         <ComputersCanvas />
-      </Suspense>
+      
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
