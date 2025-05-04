@@ -7,6 +7,26 @@ import React, { Suspense } from "react";
 
 import Loader from "../components/Loader";
 const Hero = () => {
+  useEffect(() => {
+    if (computer?.scene) {
+      computer.scene.traverse((child) => {
+        if (child.isMesh) {
+          const posAttr = child.geometry.attributes.position;
+          if (posAttr) {
+            for (let i = 0; i < posAttr.count; i++) {
+              const x = posAttr.getX(i);
+              const y = posAttr.getY(i);
+              const z = posAttr.getZ(i);
+              if (isNaN(x) || isNaN(y) || isNaN(z)) {
+                console.warn("Found NaN position in model", child.name);
+              }
+            }
+          }
+        }
+      });
+    }
+  }, [computer]);
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
