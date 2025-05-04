@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 import { ComputersCanvas } from "./canvas";
-import React, { Suspense } from "react";
 
-import Loader from "../components/Loader";
 const Hero = () => {
   useEffect(() => {
     if (computer?.scene) {
