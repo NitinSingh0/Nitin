@@ -33,6 +33,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import vaze from "./company/vaze.png";
+// import nivotime from "./company/nivotime.svg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";

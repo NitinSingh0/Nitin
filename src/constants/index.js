@@ -28,7 +28,7 @@ import {
   php,
   github1,
   mysql,
-  reactnative,
+  reactnative
 } from "../assets";
 
 export const navLinks = [
@@ -50,120 +50,198 @@ export const navLinks = [
   },
 ];
 
+// const services = [
+//   {
+//     title: "Full-Stack Web Developer",
+//     icon: web,
+//   },
+//   {
+//     title: "React & .NET Developer",
+//     icon: mobile,
+//   },
+//   {
+//     title: "Database Engineer",
+//     icon: backend,
+//   },
+//   {
+//     title: "Git & Open-Source Contributor",
+//     icon: creator,
+//   },
+// ];
+
 const services = [
   {
-    title: "Full-Stack Web Developer",
+    title: "Full Stack Development",
     icon: web,
   },
   {
-    title: "React & .NET Developer",
-    icon: mobile,
-  },
-  {
-    title: "Database Engineer",
+    title: "SaaS & Enterprise Systems",
     icon: backend,
   },
   {
-    title: "Git & Open-Source Contributor",
+    title: "AI Integrations",
     icon: creator,
   },
+  {
+    title: "API & System Architecture",
+    icon: mobile,
+  },
 ];
+// const technologies = [
+//   {
+//     name: "HTML 5",
+//     icon: html,
+//   },
+//   {
+//     name: "CSS 3",
+//     icon: css,
+//   },
+//   {
+//     name: "JavaScript",
+//     icon: javascript,
+//   },
 
+//   {
+//     name: "React JS",
+//     icon: reactjs,
+//   },
+//   {
+//     name: "React Native",
+//     icon: reactnative,
+//   },
+//   {
+//     name: "Tailwind CSS",
+//     icon: tailwind,
+//   },
+//   {
+//     name: "Node JS",
+//     icon: nodejs,
+//   },
+//   {
+//     name: "PHP",
+//     icon: php,
+//   },
+//   {
+//     name: ".NET",
+//     icon: net,
+//   },
+//   {
+//     name: "MongoDB",
+//     icon: mongodb,
+//   },
+//   {
+//     name: "MySQL",
+//     icon: mysql,
+//   },
+//   {
+//     name: "Express.js",
+//     icon: express,
+//   },
+//   {
+//     name: "git",
+//     icon: git,
+//   },
+//   {
+//     name: "GitHub",
+//     icon: github1,
+//   },
+// ];
 const technologies = [
+  // 🚀 CORE STACK (what you want to be hired for)
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-
-  {
-    name: "React JS",
+    name: "React.js",
     icon: reactjs,
   },
   {
-    name: "React Native",
-    icon: reactnative,
+    name: "Next.js",
+    icon: reactjs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "ASP.NET",
+    icon: net,
   },
   {
-    name: "Node JS",
+    name: "Node.js",
     icon: nodejs,
   },
+
+  // 🧠 AI & ADVANCED (your differentiator)
   {
-    name: "PHP",
-    icon: php,
+    name: "Python (AI & Automation)",
+    icon: backend,
+  },
+
+  // 🗄 DATABASES (important for backend credibility)
+  {
+    name: "PostgreSQL",
+    icon: mysql,
   },
   {
-    name: ".NET",
-    icon: net,
+    name: "SQL Server (SSMS)",
+    icon: mysql,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
+
+  // ⚙️ SYSTEM & APIs (high-value skills)
   {
-    name: "MySQL",
-    icon: mysql,
+    name: "REST APIs",
+    icon: backend,
+  },
+
+  // 🚀 DEPLOYMENT (THIS GETS CLIENTS)
+  {
+    name: "Linux Deployment",
+    icon: backend,
   },
   {
-    name: "Express.js",
-    icon: express,
+    name: "IIS Deployment",
+    icon: backend,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Docker",
+    icon: backend,
   },
+
+  // 🎨 FRONTEND SUPPORT (keep minimal)
   {
-    name: "GitHub",
-    icon: github1,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
 ];
-
 const experiences = [
   {
-    title: "Secondary School Education (SSC - 10th Grade)",
-    company_name: "Saraswati Vidya Mandir Kushbhawanpur UP [CBSE Board]",
-    icon: svm,
+    title: "Full Stack Developer",
+    company_name: "Nivotime Pvt. Ltd.",
+    icon: backend, // replace with company logo if possible
     iconBg: "#383E56",
-    date: "April 2018 - March 2019",
+    date: "May 2025 - Present",
     points: [
-      "Built a strong academic foundation in science and mathematics.",
-      "Engaged in coding challenges and problem-solving exercises.",
-    ],
-  },
-  {
-    title: "Higher Secondary Education (HSC - 12th Grade)",
-    company_name: "Saraswati Vidya Mandir Kushbhawanpur UP [CBSE Board]",
-    icon: svm,
-    iconBg: "#E6DEDD",
-    date: "April 2020 - March 2021",
-    points: [
-      "Focused on foundational programming, problem-solving, and mathematics.",
-      "Participated in technical and extracurricular activities.",
+      "Designed and developed scalable SaaS platforms for insurance and employee benefits, supporting 10K+ users in production.",
+      "Architected and built high-performance REST APIs handling policy management, claims processing, and document workflows.",
+      "Optimized SQL queries and database schemas, reducing API response time by 35% and improving system performance.",
+      "Developed reusable frontend components using React.js & Next.js, reducing development time by 30%.",
+      "Led end-to-end development lifecycle including system design, development, deployment, and post-release optimization.",
+      "Deployed and maintained applications on Linux and IIS servers ensuring scalability, uptime, and security.",
+      "Collaborated with cross-functional teams to convert complex business requirements into scalable production systems.",
     ],
   },
 
   {
-    title: "Bachelor of Science in Information Technology",
-    company_name: "University of Mumbai",
-    icon: vaze,
+    title: "Freelance Full Stack Developer",
+    company_name: "Self-Employed",
+    icon: web,
     iconBg: "#E6DEDD",
-    date: "April 2022 - Present",
+    date: "2024 - Present",
     points: [
-      "Achieved a 9.9 CGPA while gaining expertise in software development, databases, and web technologies.",
-      "Worked on projects involving React.js, Node.js, .NET, and database management.",
-      "Active participant in tech clubs, hackathons, and research competitions.",
-      "Developed a leave management system and student networking application.",
+      "Built and deployed multiple production-grade applications including SaaS platforms, automation systems, and enterprise tools.",
+      "Developed an automated exam duty scheduling system reducing manual workload and eliminating allocation conflicts.",
+      "Created a full-scale leave management system with multi-level approval workflows and real-time tracking.",
+      "Designed a centralized doctor record management system with export/reporting features for multi-branch operations.",
+      "Integrated AI-powered chatbots and automation tools to streamline workflows and improve efficiency.",
+      "Worked directly with clients to deliver scalable, business-driven technical solutions.",
     ],
   },
 ];
@@ -200,153 +278,119 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Vaze College Leave Management System",
+    name: "Insurance SaaS Platform",
     description:
-      "A web-based leave management system with role-based access, multi-level approval, and a streamlined application process for faculty, HODs, and administrators.",
+      "Built a scalable insurance and employee benefits platform handling policy management, claims processing, and document workflows. Designed high-performance APIs and optimized database queries to support enterprise-scale operations.",
     tags: [
-      {
-        name: "php",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: ".net", color: "green-text-gradient" },
+      { name: "postgresql", color: "pink-text-gradient" },
     ],
-    image: vazeLeave, // Replace with actual image reference
+    image: loading,
+    source_code_link: "#",
+  },
+
+  {
+    name: "Automated Exam Duty Scheduling System",
+    description:
+      "Developed an intelligent scheduling system that automatically assigns exam duties based on availability, experience, and workload, reducing manual effort and eliminating scheduling conflicts.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "php", color: "green-text-gradient" },
+      { name: "mysql", color: "pink-text-gradient" },
+    ],
+    image: loading,
+    source_code_link: "#",
+  },
+
+  {
+    name: "Enterprise Leave Management System",
+    description:
+      "Created a full-scale leave management platform with multi-level approval workflows, real-time tracking, and role-based access for HODs, principals, and administrators.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: ".net", color: "green-text-gradient" },
+      { name: "sql", color: "pink-text-gradient" },
+    ],
+    image: vazeLeave,
     source_code_link:
       "https://github.com/NitinSingh0/vaze-leave-management.git",
   },
+
   {
-    name: "Vaze Connect App",
+    name: "Doctor Record Management System",
     description:
-      "A student networking app for Vaze College with features like posts, messaging, chatbot, polling, and user connections, enhancing student interactions and engagement.",
+      "Designed a centralized system for managing and exporting doctor records across multiple branch offices with secure role-based access and reporting capabilities.",
     tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "postgresql", color: "green-text-gradient" },
     ],
-    image: vazeConnect, // Replace with actual image reference
-    source_code_link: "https://github.com/NitinSingh0/threads-app.git",
+    image: loading,
+    source_code_link: "#",
+  },
+
+  {
+    name: "AI Automation & Chat System",
+    description:
+      "Built AI-powered chatbot and automation tools using Python and modern AI APIs to streamline workflows, handle queries, and improve operational efficiency.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "ai", color: "green-text-gradient" },
+    ],
+    image: loading,
+    source_code_link: "#",
   },
   {
-    name: "Vaze Connect Admin Panel",
+    name: "Inventrix Event Website",
     description:
-      "Admin dashboard for managing user activities, polls, reports, and moderation in the Vaze Connect App, built using the MERN stack for efficient data handling.",
+      "Created a responsive event platform for the IT department’s annual fest, enabling event discovery, registrations, and improved user interaction through a modern UI.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
+      { name: "html", color: "blue-text-gradient" },
+      { name: "css", color: "green-text-gradient" },
+      { name: "javascript", color: "pink-text-gradient" },
+      { name: "bootstrap", color: "blue-text-gradient" },
     ],
-    image: vazeAdmin, // Replace with actual image reference
-    source_code_link: "https://github.com/NitinSingh0/AdminPannel.git",
-  },
-  {
-    name: "Inventrix Official Website (2023-24) & (2024-25)",
-    description:
-      "An official website developed for the IT department's annual event, featuring event details, registration, and an interactive UI.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: inventrix, // Replace with actual image reference
+    image: inventrix,
     source_code_link: "https://github.com/NitinSingh0/INVENTRIX.git",
   },
 
   {
-    name: "Vaze Official Website",
+    name: "Vaze Connect – Student Platform",
     description:
-      "Working on an official website for V.G. Vaze College, designed to provide an intuitive and informative digital presence for students and faculty. Features include announcements, academic resources, and event updates.",
+      "Built a full-scale student networking platform enabling posts, messaging, chatbot interaction, and polls to improve campus engagement and communication across users.",
     tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "php",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwind css",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "js",
-        color: "green-text-gradient",
-      },
+      { name: "react-native", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "mongodb", color: "pink-text-gradient" },
     ],
-    image: loading, // Replace with actual image reference
-    source_code_link: "https://github.com/rushiii3/KETS.git",
+    image: vazeConnect,
+    source_code_link: "https://github.com/NitinSingh0/threads-app.git",
+  },
+
+  {
+    name: "Admin Dashboard – Vaze Connect",
+    description:
+      "Developed a centralized admin panel for managing users, reports, and platform activity, enabling moderation, analytics, and efficient control over the system.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "express", color: "green-text-gradient" },
+      { name: "mongodb", color: "pink-text-gradient" },
+    ],
+    image: vazeAdmin,
+    source_code_link: "https://github.com/NitinSingh0/AdminPannel.git",
   },
   {
-    name: "Vaze Supervision Website",
+    name: "College Website (In Progress)",
     description:
-      "A streamlined Professor Allotment Exam System designed for efficient professor allocation during exams. Features an intuitive dashboard for administrators to manage and track assignments seamlessly.",
+      "Contributing to the development of an official college website to improve digital presence, centralize information, and enhance accessibility for students and faculty.",
     tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "php",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
+      { name: "php", color: "green-text-gradient" },
+      { name: "mysql", color: "pink-text-gradient" },
+      { name: "tailwind", color: "blue-text-gradient" },
     ],
-    image: loading, // Replace with actual image reference
-    source_code_link: "https://github.com/NitinSingh0/Examination.git",
-  },
+    image: loading,
+    source_code_link: "https://github.com/rushiii3/KETS.git",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
