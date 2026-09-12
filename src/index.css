@@ -39,6 +39,9 @@
 body:not(.phoneRevealed) a[href^="tel:"]{font-size:0!important;display:inline-flex;align-items:center;gap:.55rem}
 body:not(.phoneRevealed) a[href^="tel:"]::before{content:"••••• •••••";font-size:.88rem;letter-spacing:.1em}
 body:not(.phoneRevealed) a[href^="tel:"]::after{content:"◉  Reveal";font-size:.68rem;letter-spacing:.05em;padding:.38rem .55rem;border:1px solid var(--accent);border-radius:99px;color:var(--accent)}
+body:not(.phoneRevealed) .socialDock a[href^="tel:"]{font-size:17px!important;display:grid;letter-spacing:0}
+body:not(.phoneRevealed) .socialDock a[href^="tel:"]::before{content:none}
+body:not(.phoneRevealed) .socialDock a[href^="tel:"]::after{content:none}
 .phoneGate{position:fixed;inset:0;z-index:190;display:grid;place-items:center;padding:1.2rem;background:rgba(3,5,12,.82);backdrop-filter:blur(18px);animation:fadeIn .25s ease both}
 .phoneGate form{position:relative;width:min(520px,100%);display:grid;gap:.85rem;padding:clamp(1.35rem,4vw,2.4rem);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);border-radius:28px;background:color-mix(in srgb,var(--bg) 91%,transparent);box-shadow:0 35px 100px #000b,0 0 70px color-mix(in srgb,var(--accent) 12%,transparent)}
 .phoneGate small{color:var(--accent);letter-spacing:.16em;font-weight:800}.phoneGate h2{font-size:clamp(1.8rem,5vw,3rem);line-height:1;margin:0}.phoneGate p{margin:0;color:var(--muted);line-height:1.55}
@@ -73,6 +76,7 @@ body.hubOpen,body.mobileModelOpen{overflow:hidden}
 
 /* Clear experience switcher and mobile navigation */
 .navPages{display:contents}.mobileNavHead,.mobileExperiences{display:none}.themeTrigger{min-width:180px;border-color:color-mix(in srgb,var(--a) 40%,var(--line));border-radius:12px}.themeWords{display:grid;text-align:left;gap:2px}.themeTrigger .themeWords small{font:6px 'DM Mono';letter-spacing:.1em;color:var(--a)}.themeTrigger .themeWords b{font-size:9px}.hamb i{font-style:normal}.hamb b{font:7px 'DM Mono';text-transform:uppercase}body.navOpen{overflow:hidden}
+body.navOpen .mobileModelTap,body.navOpen .socialDock,body.navOpen .cornerHub,body.navOpen .visitorInsights{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
 @media(max-width:900px){
   .topbar{position:absolute;padding-inline:14px;gap:8px}.brand{margin-right:auto}.themeTrigger{min-width:0;padding:7px 10px;border-radius:11px}.themeTrigger>span:first-child{font-size:18px}.themeTrigger .themeWords small{font-size:5px}.themeTrigger .themeWords b{font-size:8px}.hamb{min-width:50px;height:44px;display:grid;place-items:center;padding:4px 7px;border:1px solid var(--line);border-radius:11px;background:var(--panel);color:var(--ink)}.hamb i{font-size:16px;line-height:1}.hamb b{font-size:5px}
   .topbar nav.open{position:fixed;z-index:180;inset:0;top:0;width:100vw;height:100dvh;display:flex;flex-direction:column;gap:0;margin:0;padding:0;background:color-mix(in srgb,var(--bg) 96%,transparent);color:var(--ink);backdrop-filter:blur(24px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
