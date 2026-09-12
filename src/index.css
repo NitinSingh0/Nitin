@@ -49,3 +49,24 @@ body:not(.phoneRevealed) a[href^="tel:"]::after{content:"◉  Reveal";font-size:
 .revealedPhone{position:fixed;z-index:175;right:1.2rem;bottom:5.6rem;display:grid;gap:.3rem;padding:.9rem 1rem;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 20px 50px #0007}.revealedPhone span{font-size:.62rem;color:var(--accent);text-transform:uppercase;letter-spacing:.12em}.revealedPhone strong{font-size:.95rem}.revealedPhone button{border:0;border-radius:9px;padding:.55rem;background:var(--accent);color:var(--bg);font-weight:800}
 @keyframes toastIn{from{opacity:0;transform:translateX(35px) scale(.94)}}@keyframes sending{0%{transform:translateX(-100%)}100%{transform:translateX(365%)}}
 @media(max-width:640px){.phoneGate{padding:.65rem;align-items:end}.phoneGate form{border-radius:24px 24px 14px 14px;padding:1.25rem;max-height:94dvh;overflow:auto}.ackToast{top:auto;bottom:1rem;right:1rem}.revealedPhone{left:1rem;right:1rem;bottom:5rem;grid-template-columns:1fr auto;align-items:center}.revealedPhone span{grid-column:1}.revealedPhone button{grid-column:2;grid-row:1/3}}
+
+/* Mobile-safe 3D and Freelance Studio dialogs */
+body.hubOpen,body.mobileModelOpen{overflow:hidden}
+.mobileSwipeHint{display:none}.hubClose span,.demoClose span,.modelClose span{display:none}
+@media(max-width:650px){
+  .site[data-page=inner] .real3d{top:135px;right:-12vw;width:62vw;height:235px;opacity:.72}
+  .site[data-page=inner] .mobileModelTap{position:fixed;top:auto;right:12px;bottom:76px;left:auto;transform:none;z-index:42;box-shadow:0 8px 28px #0008,0 0 24px color-mix(in srgb,var(--a) 28%,transparent)}
+  .mobileModelModal{height:100dvh;max-height:100dvh;-webkit-overflow-scrolling:touch}
+  .mobileModelModal>header{height:64px}.mobileModelModal header button.modelClose{width:auto;min-width:76px;padding:0 12px;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:30px;font-size:18px}.modelClose span{display:inline;font:7px 'DM Mono';text-transform:uppercase}
+  .mobileStageSpace{height:42dvh;min-height:250px;max-height:410px}
+  body.mobileModelOpen .real3d{top:66px!important;left:0!important;right:0!important;width:100vw!important;height:42dvh!important;min-height:250px!important;max-height:410px!important;touch-action:pan-y!important}
+  .mobileModelModal>main{padding-bottom:125px}
+  .hubModal{height:100dvh;max-height:100dvh;overflow:hidden}.hubModal>div{height:100dvh;max-height:100dvh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .hubModal>div>header{min-height:74px;padding-right:92px}.hubModal>div>header .hubClose{right:12px;top:12px;width:auto;min-width:76px;padding:0 11px;display:flex;align-items:center;justify-content:center;gap:5px;border-radius:30px}.hubClose span,.demoClose span{display:inline;font:7px 'DM Mono';text-transform:uppercase}
+  .mobileSwipeHint{display:block;margin:0;padding:2px 16px 10px;color:var(--muted);font:7px 'DM Mono';letter-spacing:.08em}
+  .freelanceHub{padding:12px 0 100px!important;min-height:calc(100dvh - 74px)}
+  .demoPopup{inset:0!important;width:100vw;height:100dvh;max-height:100dvh;clip-path:none!important;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .demoPopup header{min-height:64px;flex-basis:64px;padding:9px 12px 9px 15px!important;gap:10px}.demoPopup header>b{max-width:calc(100vw - 105px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.demoPopup header .demoClose{position:static!important;margin-left:auto;width:auto;min-width:78px;height:42px;display:flex;align-items:center;justify-content:center;gap:5px;border:1px solid #1113;border-radius:30px;background:#111;color:#fff}
+  .demoPopup aside{position:sticky;top:64px;z-index:2}.demoPopup main{padding-bottom:max(45px,env(safe-area-inset-bottom))}.demoPopup .sampleChart{min-height:110px}.demoPopup textarea{width:100%;max-width:100%}
+}
+@media(max-width:650px) and (orientation:landscape){.mobileStageSpace{height:58dvh}.mobileModelModal>main{padding-top:20px}body.mobileModelOpen .real3d{height:58dvh!important}.demoPopup main{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}}
