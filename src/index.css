@@ -102,3 +102,7 @@ body.navOpen .mobileModelTap,body.navOpen .socialDock,body.navOpen .cornerHub,bo
 }
 @media(max-width:390px){.site[data-page=inner] .pageHero{min-height:835px;padding-bottom:370px}.site[data-page=inner] .real3d{top:490px;height:270px}.site[data-page=inner] .mobileModelTap{top:720px}}
 @media(max-width:650px) and (max-height:700px){.site[data-page=inner] .pageHero{min-height:790px}.site[data-page=inner] .real3d{height:245px}.site[data-page=inner] .mobileModelTap{top:685px}}
+
+/* Real project artwork */
+.case.withImage .caseVisual{position:relative;overflow:hidden;background:#071016}.caseVisual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .5s;filter:saturate(.9) contrast(1.04)}.case.withImage .caseVisual:after{content:"REAL PRODUCT DIRECTION";position:absolute;right:14px;bottom:13px;padding:6px 8px;border:1px solid #fff3;border-radius:30px;background:#05090bc9;color:#fff;font:6px 'DM Mono';letter-spacing:.1em;backdrop-filter:blur(8px)}.case.withImage .caseVisual>span{position:absolute;z-index:2;left:14px;top:13px;padding:6px 8px;border-radius:30px;background:#05090bc9;color:#fff}.case.withImage .caseGlow{z-index:1;opacity:.3}.case.withImage:hover .caseVisual>img{transform:scale(1.045);filter:saturate(1.08) contrast(1.04)}
+@media(max-width:600px){.case.withImage .caseVisual{height:225px;margin:12px}.caseVisual>img{object-position:center}}
