@@ -193,3 +193,7 @@ body.resumeGateOpen{overflow:hidden}.resumeGate{z-index:260;background:radial-gr
 /* Final header control layout: each action owns dedicated space */
 @media(min-width:901px){.headerResume{right:5vw;width:52px;min-width:52px;padding:9px}.headerResume>b,.headerResume>small{display:none}.headerResume>span{grid-row:1;width:32px;height:32px}.topbar nav{margin-right:0!important}.topbar .themeTrigger{margin-right:60px}}
 @media(max-width:900px){.headerResume{right:76px!important}.topbar .themeTrigger{margin-right:52px!important}}
+
+/* Résumé action is mounted inside the header flex row */
+.topbar>.brand{order:1}.topbar>nav{order:2}.topbar>.themeTrigger{order:3;margin-right:0!important}.topbar>.headerResume{position:static!important;inset:auto!important;order:4;flex:0 0 52px;width:52px!important;min-width:52px!important;height:52px;margin:0!important;padding:9px!important}.topbar>.headerResume>b,.topbar>.headerResume>small{display:none!important}.topbar>.headerResume>span{grid-row:1;width:32px;height:32px}.topbar>.hamb{order:5}
+@media(max-width:900px){.topbar>.headerResume{flex-basis:44px;width:44px!important;min-width:44px!important;height:44px;padding:6px!important}.topbar>.headerResume>span{width:30px;height:30px}.topbar>.themeTrigger{margin-right:0!important}}
